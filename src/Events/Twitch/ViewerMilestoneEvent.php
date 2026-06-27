@@ -36,8 +36,6 @@ class ViewerMilestoneEvent extends Event
      */
     public Tags $tags;
 
-
-
     public function __construct(Channel $channel, string $user, int $milestoneValue, string $category, Tags $tags)
     {
         $this->channel = $channel;

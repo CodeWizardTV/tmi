@@ -96,7 +96,7 @@ class UserNoticeMessage extends IrcMessage
                 return new Twitch\SubGiftEvent($this->channel, $username, $streakMonths, $recipient, $plan, $tags);
             case self::TAG_SUBMYSTERYGIFT:
                 return new Twitch\SubMysteryGiftEvent($this->channel, $username, $giftSubCount, $plan, $tags);
-           case self::TAG_VIEWERMILESTONE:
+            case self::TAG_VIEWERMILESTONE:
                 return new Twitch\ViewerMilestoneEvent($this->channel, $username, $milestoneValue, $category, $tags);
             default:
                 return null;
